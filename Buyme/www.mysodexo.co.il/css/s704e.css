@@ -1,0 +1,4000 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    min-height: 100%;
+    padding-bottom: 5.5em;
+    font-family: "Alef Hebrew", serif;
+    font-size: 16px;
+    position: relative;
+    direction: rtl;
+}
+@media print {
+    a[href]::after { content: none !important; } /* Don't print url (override Bootstrap) */
+}
+#notification {
+    background-color: transparent;
+    background-position: .5em center;
+    background-repeat: no-repeat;
+    border-radius: 0 0 .4em .4em;
+    color: #fff;
+    font-weight: 600;
+    left: 15%;
+    top: -4em;
+    padding: .5em .5em .3em 3.5em;
+    position: absolute;
+    text-align: center;
+    transition: top ease-out 1s, background linear 1s;
+    width: 13em;
+    z-index: 9999;
+}
+
+    #notification a:link, #notification a:visited {
+        color: #ddf;
+    }
+
+    #notification a:hover, #notification a:focus {
+        color: #fee;
+    }
+
+    #notification:not(:empty) {
+        background-color: #cc1480;
+        background-image: url("../i/dish-served.png");
+        background-size: 2.5em;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        min-height: 3.5em;
+        top: 0;
+    }
+.blues {
+    background: #283897;
+    color: white;
+    float: left;
+    font-size: larger;
+    padding: 1px 1em;
+}
+.tooltipster-content {
+    font-family: "Alef Hebrew", serif !important;font-size:medium !important;
+}
+#form {
+    height: 100%;
+}
+.mbBgndGallery {
+    left: 0px;
+}
+.login .wrap {
+    position: relative;
+    min-width: 1000px;
+    height: 100%;
+}
+.login-body .lpchat-container { bottom: 100px; }
+.wrap {
+    padding: 0px 0px 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+.index.wrap {
+    min-width: 0px;
+}
+.wrap .box_shadow {
+    width: 102% !important;
+}
+.login header {
+    box-shadow: 0px 5px 10px #000;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 15%;
+    align-items: center;
+    max-height: 80px;
+}
+	.login header > *, .login header .join-links > * {
+		display: inline-block;
+	}
+    .login header .title {
+        -webkit-flex: 1 0 338px;
+        -ms-flex: 1 0 338px;
+        flex: 1 0 338px;
+    }
+    .login header .customer {
+        padding: 10px;
+    }
+    .login header .join-links {
+        display: flex;
+        -webkit-flex: 1 .5 28em;
+        -ms-flex: 1 .5 28em;
+        flex: 1 .5 28em;
+        max-width: 42em;
+    }
+        .login header .join-links a {
+            -webkit-flex: 1 0 7em;
+            -ms-flex: 1 0 7em;
+            flex: 1 0 7em;
+            padding: 2em .2em;
+            text-align: center;
+            color: #201f46;
+        }
+        .login header .join-links a:hover {
+            text-decoration: none;
+            background: #ddd;
+        }
+
+.header {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    direction: rtl;
+    box-shadow: 0px 5px 10px #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    .header > div {
+        width: 199px;
+        height: 100px;
+        text-align: center;
+        border-right-color: rgb(123, 123, 148);
+        border-right-width: 1px;
+        border-right-style: solid;
+        float: left;
+    }
+    .header .slog {
+        width: 198px;
+        padding-top: 28px;
+        margin-left: 15%;
+        border-left-color: rgb(123, 123, 148);
+        border-left-width: 1px;
+        border-left-style: solid;
+        direction: ltr;
+    }
+    .header .social {
+        padding-top: 34px;
+        direction: ltr;
+    }
+        .header .social a {
+            padding: 0px 5px;
+        }
+    .header .one {
+        padding-top: 38px;
+    }
+    .header .two {
+        padding-top: 28px;
+    }
+        .header .two span {
+            font-weight: bold;
+        }
+    .header .title {
+        padding-top: 20px;
+        margin-right: 15%;
+        border-right-color: currentColor;
+        border-right-width: medium;
+        border-right-style: none;
+        float: right;
+    }
+.scard-img {
+    padding-right: .2em;
+    vertical-align: -.2em;
+}
+.main {
+    height:80%;
+}
+#image {
+    width: 100%;
+    height: 100% !important;
+    position: absolute;
+    z-index: 1;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.main .login {
+    width: 505px;
+    margin-top: 9%;
+    margin-right: 15%;
+    position: relative;
+    z-index: 2;
+}
+    .main .login .text {
+        line-height: 50px;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+        .main .login .text:not(.accessibility_contrast_yellow_on_black) {
+            text-shadow: #fef 1px 1px, #ffe -1px 0 .4em, #fef 0 -1px .4em, #eff 2px 0 .4em, #efe 0 2px .4em;
+        }
+    .main .login .text ::selection {
+        background: navy;
+        color: skyblue;
+        text-shadow: none !important;
+    }
+#restopass {
+    font-size: 120%;
+    margin-bottom: 5px;
+}
+.main .login .login_form {
+    background: rgba(50,50,50,.75);
+    padding: 25px;
+    box-shadow: 0px 0px 15px #555;
+}
+    .main .login .login_form .input_text {
+        padding: 0px 5px;
+        width: 110px;
+        height: 32px;
+        vertical-align: middle;
+    }
+    .main .login .login_form button {
+        background: #cc1480;
+        outline: 0px !important;
+        border-radius: 3px;
+        border: 0px currentColor;
+        border-image: none;
+        width: 110px;
+        height: 34px;
+        color: #fff;
+        vertical-align: middle;
+    }
+        .main .login .login_form button span {
+            background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 5px;
+            padding-left: 13px;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+#pass_rem {
+    color: #fff;
+}
+.main .login .login_form .bottom {
+    margin-top: 5px;
+}
+    .main .login .login_form .bottom .remember label {
+        color: #fff;
+        font-weight: normal;
+    }
+.main .login .login_form .notice {
+    color: rgb(225, 86, 100);
+    padding-right: 17px;
+    font-size: 13px;
+}
+.main .red {
+    margin-top: 7%;
+    margin-right: 15%;
+    position: relative;
+    z-index: 2;
+}
+.horiz, .footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer {
+    background: #201f46;
+    width: 100%;
+    bottom: 0px;
+    z-index: 11111;
+    position: absolute;
+    padding: 1em calc(5% + 150px) 1em 2.5%;
+    align-items: center;
+}
+	.horiz > *, .footer > * {
+		display: inline-block;
+	}
+    .footer .f-logo {
+        padding-bottom: 1em;
+        -webkit-flex: 1.5 0 160px;
+        -ms-flex: 1.5 0 160px;
+        flex: 1.5 0 160px;
+    }
+
+    .footer .f-links {
+        -webkit-flex: 5 2 320px;
+        -ms-flex: 5 2 320px;
+        flex: 5 2 320px;
+    }
+
+    .footer .social {
+        -webkit-flex: 1 0 110px;
+        -ms-flex: 1 0 110px;
+        flex: 1 0 110px;
+    }
+
+    .footer .buttons {
+        -webkit-flex: 2 1 250px;
+        -ms-flex: 2 1 250px;
+        flex: 2 1 250px;
+    }
+    .footer .chatbot {
+        display: block;
+        /*position: fixed;*/
+        bottom: 2em;
+        right: 2.5%;
+        left: auto;
+        transition: bottom ease .6s,left ease .6s,right ease .6s;
+    }
+        .footer .chatbot.affix-bottom {
+            /*position: absolute;*/
+        }
+        .footer .chatbot a {
+            max-height: 2em;
+            outline: none;
+        }
+        .footer .chatbot img {
+            height: 62px;
+            width: 75px;
+            vertical-align: bottom;
+            transition: height ease .4s,width ease .4s;
+            outline: none;
+        }
+/*
+@media all and (min-width:700px) {
+    .login-body .footer .chatbot a img, .footer .chatbot.affix-bottom a img,
+    .footer .chatbot a:active img, .footer .chatbot a:hover img {
+        height: 123px;
+        width: 149px;
+    }
+}*/
+        .footer a {
+            color: #fff;
+        }
+.footer ul {
+    list-style: none;
+    padding: 0 1.5em 0 0;
+}
+
+.footer li {
+    padding: .1em .4em;
+}
+
+    .footer .line {
+        background: rgb(56, 56, 56);
+        height: 2px;
+        margin-top: 10px;
+    }
+
+    .footer .cr {
+        width: 100%;
+        color: rgb(131, 131, 131);
+        line-height: 23px;
+        padding-left: 15%;
+        font-size: 13px;
+        direction: ltr;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+.fancybox-close {
+    background: url("http://static.mysodexo.co.il/i/close-popup.png") 0px 0px;
+    right: -19px;
+    top: -19px;
+    width: 19px;
+    height: 19px;
+    left: auto;
+}
+
+.fancybox-skin {
+    border-radius: 2px;
+}
+
+.popup {
+    margin: 0px 5px;
+    width: 250px;
+    height: 175px;
+    display: none;
+}
+
+    .popup .title {
+        font-size: 220%;
+        border-bottom-color: currentColor;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+    }
+
+    .popup div.text {
+        margin-bottom: 14px;
+    }
+
+    .popup input.grey {
+        background: rgb(243, 241, 237);
+        padding: 0px 10px;
+        border-radius: 3px;
+        border: currentColor;
+        border-image: none;
+        width: 100%;
+        height: 25px;
+        color: rgb(155, 155, 155);
+        font-size: 95%;
+    }
+
+    .popup button.submit {
+        background: linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%), #cc1480;
+        padding: 0px 10px;
+        outline: 0px !important;
+        border-radius: 3px;
+        border: 0px currentColor;
+        border-image: none;
+        color: #fff;
+        font-size: 120%;
+        margin-top: 15px;
+    }
+#home_dlvr,.home_dlvr-fancybox .fancybox-skin, #user_info,.user_info-fancybox .fancybox-skin {margin:0;padding:0!important}
+#switch_address,#home_dlvr,#go2credit .center {
+    width: 100%;
+    height: 100%;
+}
+    .radAddress td { padding-right:34px!important; }
+    #switch_address td { padding:4px; }
+    #switch_address div.text { margin-top: 14px; }
+    #switch_address .bootstrap-select > .btn { background: rgb(243, 241, 237); }
+    #switch_address label { display:inline; }
+    #switch_address input[type=button],#home_dlvr input[type=button],#go2credit input[type=button] {
+        background: #cc1480;
+        outline: 0px !important;
+        border-radius: 3px;
+        border: 0px currentColor;
+        border-image: none;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        color: white;
+        vertical-align: middle;
+        margin-top:10px;
+    }
+
+#add_address .bootstrap-select > .btn {
+    background: rgb(243, 241, 237);
+}
+
+.menu-fancybox .fancybox-inner,.switch_address-fancybox .fancybox-inner { overflow-x: hidden !important; }
+.fancybox-inner { overflow-y: auto !important; overflow-x:hidden !important }
+
+#menu {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+/*
+.menu-fancybox .fancybox-close {
+    top: 5px;
+    right: 5px;
+}
+*/
+#menu .title .button {
+    background: #cc1480;
+    padding: 1px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 60%;
+    display: inline-block;
+}
+
+    #menu .title .button span {
+        background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 9px;
+        padding-left: 15px;
+        display: block;
+    }
+
+#menu .top_part {
+    margin-top: 12px;
+}
+
+    #menu .top_part .col {
+        float: right;
+    }
+
+    #menu .top_part .col-1 {
+        width: 288px;
+        margin-left: 15px;
+    }
+
+    #menu .top_part .col-2 {
+        width: 300px;
+    }
+
+    #menu .top_part .col-3 {
+        background: url("http://static.mysodexo.co.il/i/popup-dots-v.png") repeat-y right;
+        width: 268px;
+        padding-right: 12px;
+        padding-bottom: 25px;
+    }
+
+        #menu .top_part .col-3 .line1 {
+            padding-bottom: 10px;
+            border-bottom-color: rgb(237, 237, 237);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        #menu .top_part .col-3 .line2 {
+            padding-bottom: 10px;
+            border-bottom-color: rgb(237, 237, 237);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        #menu .top_part .col-3 .line3 {
+            padding-bottom: 10px;
+            border-bottom-color: rgb(237, 237, 237);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        #menu .top_part .col-3 .line1 .btn-default {
+            background: rgb(243, 241, 237);
+        }
+
+        #menu .top_part .col-3 span {
+            color: rgb(42, 41, 92);
+            font-size: 90%;
+        }
+
+            #menu .top_part .col-3 span.text {
+                color: rgb(60, 59, 55);
+            }
+
+#menu .t_title {
+    border-top:dashed 1px #686868!important;
+    padding-top: 1px;
+    margin-top: 10px;
+}
+
+    #menu .t_title div {
+        background: rgb(243, 241, 237);
+        padding-right: 12px;
+        padding-bottom: 5px;
+    }
+
+    #menu .t_title .h1 {
+        color: rgb(42, 41, 92);
+        font-size: 180%;
+        font-weight: normal;
+    }
+
+#menu .prettycheckbox > a {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+#menu .prettyradio > a {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+#menu .prettycheckbox > a:focus {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+.products .prettycheckbox > a {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+.products .prettyradio > a {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+.products .prettycheckbox > a:focus {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+#menu .prettycheckbox > a.checked {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-checked.png") !important;
+}
+
+.products .prettycheckbox > a.checked {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-checked.png") !important;
+}
+
+#menu .prettycheckbox > a.disabled {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked-disabled.png") !important;
+}
+
+#menu .prettycheckbox > a.checked.disabled {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-checked-disabled.png") !important;
+}
+
+#menu .t_row table {
+    width:100%;
+    table-layout:fixed;
+}
+#menu .t_row input {
+    margin-right:0;
+}
+#menu .t_row td {
+    padding:5px;
+    border-top:dashed 1px;
+    font-weight: normal;
+    text-overflow:clip;
+    vertical-align:top;
+}
+#menu .t_row label {
+    display:inline;
+    font-weight: normal;
+}
+
+#waze {
+    width: 349px;
+    height: 224px;
+}
+
+    #waze .text {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+        padding-bottom: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #waze input[type=text] {
+        background: rgb(243, 241, 237);
+        padding: 1px 10px;
+        border: currentColor;
+        border-image: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #waze button {
+        background: linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%), #cc1480;
+        /*background: 0px 0px rgb(179, 6, 23);*/
+        outline: 0px !important;
+        border-radius: 3px;
+        border: 0px currentColor;
+        border-image: none;
+        width: 104px;
+        height: 27px;
+        color: #fff;
+        padding-right: 12px;
+        font-size: 120%;
+        vertical-align: middle;
+        float: left;
+    }
+
+        #waze button span {
+            background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 7px rgba(0, 0, 0, 0);
+            width: 65px;
+            line-height: 25px;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+#add_friend {
+    width: 349px;
+    height: 357px;
+}
+
+    #add_friend .text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+.users-list ul,.users-list div {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    max-height:215px;
+    overflow-y:auto;
+}
+        .users-list ul li .plus {
+            color: rgb(84, 83, 80);
+        }
+
+.users-list {
+    width: 90%;
+}
+
+    .users-list .pull-right img {
+        margin-left: 5px;
+    }
+
+.billing_popup {
+    width: 490px;
+    height: 325px;
+    overflow: hidden;
+}
+
+    .billing_popup .title a {
+        color: #000;
+        font-size: 45%;
+        text-decoration: underline;
+        margin-right: 30px;
+    }
+
+    .billing_popup .users-list {
+        height: 224px;
+        margin-top: 10px;
+    }
+
+        .billing_popup .users-list ul li {
+            line-height: normal;
+        }
+
+    .billing_popup .total {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+        padding: 0px 9px 5px;
+        width: 99%;
+        font-weight: bold;
+    }
+
+    .billing_popup .price input {
+        background: rgb(243, 241, 237);
+        padding: 1px 5px;
+        border: currentColor;
+        border-image: none;
+        width: 45px;
+    }
+
+#billing_change {
+    width: 350px;
+    height: auto;
+}
+
+    #billing_change .users-list {
+        height: 218px;
+        padding-bottom: 0px;
+    }
+
+    #billing_change .total {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom rgb(243, 241, 237);
+        padding-top: 5px;
+    }
+
+    #billing_change .buttons-line {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+        #billing_change .buttons-line .red-button {
+            padding: 3px 20px;
+        }
+
+#personal_credit_login {
+    width: 370px;
+    height: auto;
+    overflow: hidden;
+}
+
+    #personal_credit_login .info {
+        padding-top: 8px;
+        padding-bottom: 12px;
+    }
+
+#new_personal_credit .info {
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+#personal_credit_login input.grey {
+    margin-bottom: 12px;
+}
+
+#personal_credit_login .buttons-line {
+    background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x top;
+    padding-top: 8px;
+}
+
+#new_personal_credit .buttons-line {
+    background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x top;
+    padding-top: 8px;
+}
+
+#personal_credit_login .buttons-line .red-button {
+    padding: 3px 20px;
+}
+
+#new_personal_credit .buttons-line .red-button {
+    padding: 3px 20px;
+}
+
+#personal_credit_login .buttons-line a.pull-right {
+    color: rgb(137, 138, 140);
+    text-decoration: underline;
+}
+
+#new_personal_credit .buttons-line a.pull-right {
+    color: rgb(137, 138, 140);
+    text-decoration: underline;
+}
+
+#new_personal_credit {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+}
+
+    #new_personal_credit .title {
+        padding-top: 10px;
+    }
+
+    #new_personal_credit .payment {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x top;
+        padding-top: 15px;
+    }
+
+    #new_personal_credit .buttons-line {
+        margin-top: 12px;
+    }
+
+    #new_personal_credit .prettycheckbox > a {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+    }
+
+    #new_personal_credit .prettyradio > a {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+    }
+
+    #new_personal_credit .prettycheckbox > a:focus {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+    }
+
+.products .prettycheckbox > a {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+.products .prettyradio > a {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+.products .prettycheckbox > a:focus {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+}
+
+#new_personal_credit .prettycheckbox > a.checked {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-checked.png") !important;
+}
+
+.products .prettycheckbox > a.checked {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-checked.png") !important;
+}
+
+#new_personal_credit .prettycheckbox > a.disabled {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked-disabled.png") !important;
+}
+
+#new_personal_credit .prettycheckbox > a.checked.disabled {
+    background: url("http://static.mysodexo.co.il/i/checkbox-about-checked-disabled.png") !important;
+}
+
+.scrollable .viewport .overview {
+    width: 100%;
+}
+
+.default-skin.scrollable {
+    padding-right: 0px;
+    padding-left: 6px;
+}
+
+.scrollable .vertical.scroll-bar {
+    left: 0px;
+    right: auto;
+}
+
+.default-skin.scrollable .scroll-bar .thumb {
+    background: rgb(221, 221, 220);
+    border-radius: 1px;
+    opacity: 1;
+}
+
+.header .title {
+    height: auto;
+    padding-top: 22px;
+}
+
+.header .title-master {
+    padding-top: 12px;
+}
+
+.top_part {
+    position: relative;
+    z-index: 2;
+    /*background: radial-gradient(250% 200% at 45% -50%, navy, #cc1480 56%, #cc1480 60%, #d92776 61%, #d92776 64%, #e6396c 65%, #e6396c 68%, #f24c62 69%, #f24c62 72%, #ff5e58 73%);*/
+    background: linear-gradient(#fff 70%, #eee);
+}
+
+.header .user {
+    border: currentColor;
+    border-image: none;
+    width: auto;
+    height: auto;
+    margin-left: 16%;
+}
+
+    .header .user .logo {
+        text-align: left;
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+#contactService {
+    margin-right: 6em;
+    padding-top: .3em;
+}
+#contactService, .header .user .data {
+    text-align: right;
+    line-height: 1.1em;
+    font-size: 95%;
+    margin-top: 20px;
+    margin-left: 6em;
+}
+
+        .header .user .data a {
+            text-decoration: underline;
+        }
+
+        .header .user .data .text .separator {
+            padding: 0px 4px;
+        }
+
+        .header .user .data .icon {
+            margin-top: 4px;
+            margin-left: 7px;
+            position: relative;
+        }
+
+            .header .user .data .icon img {
+                cursor: pointer;
+            }
+.space:not(:empty)::before{
+    content: '| ';
+    margin: 0 .5em;
+    color: #999;
+}
+
+.breadcrumbs {
+    background: url("http://static.mysodexo.co.il/i/breadcrumbs-bg.png");
+    padding: 0px 6px;
+    font-size: 80%;
+    margin-top: 10px;
+    margin-right: 15%;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+    .breadcrumbs ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .breadcrumbs ul li {
+            margin: 0px 3px;
+            color: rgb(186, 6, 24);
+            display: inline;
+        }
+
+            .breadcrumbs ul li a {
+                color: #000;
+                text-decoration: underline;
+            }
+
+            .breadcrumbs ul li.arrow {
+                color: #000;
+            }
+
+.top_part .round_buttons {
+    padding-bottom: 40px;
+    margin-right: 15%;
+    position: relative;
+    z-index: 2;
+    overflow:hidden;
+    height:150px;
+}
+
+    .top_part .round_buttons a {
+        background: rgba(42,41,92,0.85);
+        border-radius: 50%;
+        width: 101px;
+        height: 101px;
+        text-align: center;
+        line-height: 25px;
+        padding-top: 26px;
+        font-size: 95%;
+        margin-left: 11px;
+        float: right;
+        display: block;
+        text-decoration: none;
+        outline: none;
+        position: relative;
+    }
+
+        .top_part .round_buttons a.active {
+            background: linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%), #cc1480;
+        }
+
+            .top_part .round_buttons a.active::before {
+                content: "";
+                position: absolute;
+                top: 100px;
+                left: 44px;
+                border-width: 10px 7px 0;
+                border-style: solid;
+                border-color: #e6396c transparent;
+                display: block;
+                width: 0;
+            }
+        .top_part .round_buttons a.accessibility_contrast_black_on_blue_a::before {
+            border-top-color: navy;
+            border-width: 15px 50px 0;
+            left: 0;
+            outline: none !important;
+        }
+        .top_part .round_buttons a.accessibility_contrast_yellow_on_black_a::before {
+            border-top-color: yellow;
+            border-width: 15px 50px 0;
+            left: 0;
+            outline: none !important;
+        }
+    .top_part .round_buttons a span {
+            margin: auto;
+            width: 75%;
+            color: #fff;
+            line-height: 15px;
+            display: block;
+        }
+
+.tabs {
+    margin-right: 15%;
+    position: relative;
+    z-index: 2;
+    overflow:hidden;
+    height:35px;
+}
+
+    .tabs .button {
+        background: 0px 0px rgb(243, 241, 237);
+        padding: 7px 35px;
+        height: 35px;
+        color: rgb(60, 59, 55);
+        font-size: 95%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .colourful,
+    .tabs .active.button {
+        background: linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%), #cc1480;
+        color: #fff;
+        font-weight: bold;
+    }
+        .colourful.accessibility_contrast_black_on_blue_a, .tabs .active.button.accessibility_contrast_black_on_blue_a {
+            border-left: solid #cc1480;
+            border-top: solid #e6396c;
+            border-right: solid #ff5e58;
+        }
+        .colourful.accessibility_contrast_yellow_on_black_a, .tabs .active.button.accessibility_contrast_yellow_on_black_a {
+            border: solid yellow;
+        }
+
+.top_part .filter {
+    background: rgba(50,50,50,.74);
+    padding: 20px 25px 25px;
+    width: 70%;
+    height: 100px;
+    color: #fff;
+    margin-top: 3px;
+    margin-right: 15%;
+    position: relative;
+    z-index: 2;
+    overflow:hidden;
+    height:100px;
+}
+
+    .top_part .filter label {
+        font-weight: normal;
+    }
+
+    .top_part .filter .col {
+        width: 20%;
+        height: 60px;
+        border-right-color: #fff;
+        border-right-width: 1px;
+        border-right-style: solid;
+        float: left;
+    }
+
+    .top_part .filter .subcol {
+        float: left;
+    }
+
+    .top_part .filter input {
+        color: #000;
+    }
+
+    .top_part .filter select {
+        color: #000;
+    }
+
+    .top_part .filter #time {
+        border-radius: 0px 4px 4px 0px;
+        border: currentColor;
+        border-image: none;
+        width: 79px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 95%;
+        margin-bottom: 8px;
+        vertical-align: middle;
+    }
+
+    .top_part .filter #icon_time {
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+    .top_part .filter .col-1 {
+        width: 23%;
+    }
+
+        .top_part .filter .col-1 .pull-left {
+            position: relative;
+        }
+
+            .top_part .filter .col-1 .pull-left .ui-timepicker-wrapper {
+                left: 0px !important;
+                top: 26px !important;
+                width: 100%;
+            }
+
+        .top_part .filter .col-1 label {
+            line-height: 11px;
+            margin-bottom: 11px;
+        }
+
+        .top_part .filter .col-1 .text {
+            margin-right: 2%;
+            margin-left: 0px;
+            float: right !important;
+        }
+
+        .top_part .filter .col-1 .line2 {
+            font-size: 80%;
+        }
+
+    .top_part .filter .col-2 {
+        width: 18%;
+    }
+
+    .top_part .filter .has-pretty-child.col-2 {
+        padding-right: 1%;
+    }
+
+    .top_part .filter .col-5 {
+        width: 25%;
+        text-align: center;
+    }
+
+    .top_part .filter .col-3 {
+        width: 17%;
+        text-align: center;
+    }
+
+    .top_part .filter .col-4 {
+        width: 17%;
+        text-align: center;
+    }
+
+    .top_part .filter .col-3 input, .top_part .filter input.rest-name {
+        padding: 0px 8px;
+        border-radius: 0px 4px 4px 0px;
+        border: currentColor;
+        border-image: none;
+        width: 70%;
+        height: 25px;
+        margin-bottom: 8px;
+        vertical-align: middle;
+    }
+
+    .top_part .filter .icon {
+        margin-bottom: 8px;
+    }
+
+    .top_part .filter .col-4 .bootstrap-select {
+        width: 90%;
+        margin-bottom: 8px;
+    }
+
+        .top_part .filter .col-4 .bootstrap-select > .btn {
+            float: none;
+        }
+
+    .top_part .filter .col-5 {
+        border: currentColor;
+        border-image: none;
+        text-align: right;
+        float: right;
+    }
+        .top_part .filter .col-5 .line2 {
+            height: 45px;
+            font-size: 110%;
+            margin-bottom: 13px;
+            overflow:hidden;
+        }
+
+        .top_part .filter .col-5 a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+.sidebar_left {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 15%;
+    float: left;
+}
+    .sidebar_left .sidebar_left {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .sidebar_left .block {
+        margin-bottom: 25px;
+    }
+
+        .sidebar_left .block .title {
+            background: 0px 0px rgb(42, 41, 92);
+            padding: 4px 10px;
+            color: #fff;
+            font-size: 140%;
+        }
+
+    .sidebar_left .dark.block .title {
+        background: rgb(26, 26, 24);
+    }
+
+    .sidebar_left .accordion {
+    }
+
+        .sidebar_left .accordion ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .sidebar_left .accordion ul li {
+                color: rgb(21, 21, 21);
+                font-size: 120%;
+                margin-bottom: 2px;
+                position: relative;
+                min-height: 40px;
+            }
+
+                .sidebar_left .accordion ul li a {
+                    width: 100%;
+                    color: rgb(21, 21, 21);
+                    display: block;
+                }
+
+                .sidebar_left .accordion ul li img {
+                    display: none;
+                }
+
+                .sidebar_left .accordion ul li.active img {
+                    display: block;
+                }
+
+                .sidebar_left .accordion ul li div {
+                    background: url("http://static.mysodexo.co.il/i/accordion-line-bg.png");
+                    padding: 5px 10px;
+                    width: 100%;
+                    position: absolute;
+                }
+
+                .sidebar_left .accordion ul li.active div {
+                }
+
+        .sidebar_left .accordion .number {
+            background: 0px 0px #fff;
+            border-radius: 50px;
+            width: 27px;
+            text-align: center;
+            color: rgb(42, 41, 92);
+            line-height: 23px;
+            padding-bottom: 2px;
+            font-size: 120%;
+            display: inline-block;
+            position: relative;
+            margin-left:5px;
+        }
+
+        .sidebar_left .accordion .text {
+            font-size: 110%;
+        }
+
+        .sidebar_left .accordion .arrow {
+            background: url("http://static.mysodexo.co.il/i/accordion-arrow.png") 0px 0px;
+            width: 9px;
+            height: 14px;
+            margin-top: 8px;
+            float: left;
+            display: inline-block;
+        }
+.sidebar_left .bx-wrapper {
+    margin: 0px;
+}
+
+    .sidebar_left .bx-wrapper .bx-viewport {
+        background: none;
+        border: currentColor;
+        border-image: none;
+        left: 0px;
+        z-index: 1;
+        box-shadow: none;
+    }
+
+        .sidebar_left .bx-wrapper .bx-viewport li {
+            left: 0px;
+        }
+
+    .sidebar_left .bx-wrapper .bx-pager {
+        left: 0px;
+        width: auto;
+    }
+
+    .sidebar_left .bx-wrapper .bx-default-pager.bx-pager a:hover {
+        background: rgb(50, 65, 156);
+    }
+
+    .sidebar_left .bx-wrapper .bx-default-pager.bx-pager a.active {
+        background: rgb(50, 65, 156);
+    }
+
+.sidebar_left .bxslider-2 .bx-wrapper .bx-pager {
+    bottom: 0px;
+}
+
+.sidebar_left .bxslider-3 .bx-wrapper .bx-pager {
+    bottom: 0px;
+}
+
+.sidebar_left .bxslider-2 .inner {
+    left: 55px;
+    top: 46px;
+    position: absolute;
+}
+
+.sidebar_left .bxslider-3 .inner {
+    left: 60px;
+    top: 50px;
+    position: absolute;
+}
+
+.sidebar_left .bxslider-products {
+    position: relative;
+}
+
+    .sidebar_left .bxslider-products .product {
+        height: 150px;
+        position: relative;
+    }
+
+    .sidebar_left .bxslider-products .overlay {
+        background: rgba(50,50,50,.74);
+        left: 0px;
+        width: 100%;
+        bottom: 0px;
+        position: absolute;
+    }
+
+        .sidebar_left .bxslider-products .overlay div {
+            height: 43px;
+            text-align: center;
+            float: left;
+        }
+
+    .sidebar_left .bxslider-products .arrow-left {
+        top: 118px;
+        width: 20px;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .sidebar_left .bxslider-products .arrow-right {
+        top: 118px;
+        width: 20px;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .sidebar_left .bxslider-products .arrow-left {
+        left: 5px;
+    }
+
+    .sidebar_left .bxslider-products .arrow-right {
+        right: 13px;
+    }
+
+    .sidebar_left .bxslider-products .overlay img {
+        display: inline;
+    }
+
+    .sidebar_left .bxslider-products .overlay .link {
+        width: 40%;
+        padding-top: 10px;
+        margin-left: 10%;
+    }
+
+        .sidebar_left .bxslider-products .overlay .link a {
+            background: #cc1480;
+            padding: 3px 15px;
+            color: #fff;
+            font-size: 90%;
+        }
+
+    .sidebar_left .bxslider-products .overlay .text {
+        width: 40%;
+        text-align: right;
+        color: #fff;
+        padding-top: 6px;
+        padding-right: 10px;
+        margin-right: 10%;
+    }
+
+        .sidebar_left .bxslider-products .overlay .text span {
+            line-height: 15px;
+            display: block;
+        }
+
+        .sidebar_left .bxslider-products .overlay .text .line2 {
+            font-weight: bold;
+        }
+
+.sidebar_left .long_banner {
+    background: rgb(114, 187, 255);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+.list {
+    width: 53%;
+    margin-right: 15%;
+    float: right;
+}
+
+    .list > .title {
+        padding-bottom: 18px;
+        margin-top: 15px;
+        border-bottom-color: rgb(26, 26, 24);
+        border-bottom-style: solid;
+    }
+
+.checkout div.title {
+    padding-bottom: 18px;
+    margin: 15px 0;
+    border-bottom-color: rgb(26, 26, 24);
+    border-bottom-style: solid;
+}
+
+.list .title .h1 {
+    margin: 0px;
+}
+
+.checkout .title .h1 {
+    margin: 0px;
+}
+
+.list .title .selectpicker {
+    background: rgb(243, 241, 237);
+    margin-top: 10px;
+}
+
+.list .line {
+    color: rgb(60, 59, 55);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    margin-top: 10px;
+    border-bottom-color: rgb(211, 208, 201);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    Xwhite-space:nowrap;
+}
+
+.list :last-child.line {
+    border: currentColor;
+    border-image: none;
+}
+
+.list .line > div {
+    float: left;
+}
+
+    .list .line > div.dotted-v {
+        background: url("http://static.mysodexo.co.il/i/dots-v.png");
+        width: 1px;
+        height: 107px;
+    }
+
+.list .line .arrow {
+    background: url("http://static.mysodexo.co.il/i/arrow-blue.png") no-repeat center;
+    width: 5.5%;
+    height: 105px;
+    cursor:pointer;
+}
+.list .line .arrow.Cancelable_True {
+    background-image: url("http://static.mysodexo.co.il/i/arrow-red.png");
+}
+.list .line .price {
+    width: 18%;
+    text-align: center;
+    margin-top:-5px;
+}
+.list.rest .line .price {
+    height:105px;
+    overflow:hidden;
+}
+    .list .line .price div {
+        margin: 0px auto;
+        width: 90%;
+    }
+.list .line .time .line1 {
+    background: none;
+    margin-top: 10px;
+}
+
+.list .line .phone .line1 {
+    background: none;
+    margin-top: 10px;
+}
+
+.list .line .price .line1 b {
+    font-size: 120%;
+}
+.list .line .price .line1 .times b {color:#cc1480;white-space:nowrap;}
+.list .line .phone .line1 b, .list .line .price .line1 .times b {
+    font-size: 100%;
+}
+
+.list .line .price .line1 span {display: block;}
+.list .line .price .line1 span span {display: inline;}
+
+.list .line .price .line2 {
+    background: url("http://static.mysodexo.co.il/i/dots-h.png") repeat-x bottom;
+    padding: 8px 0px;
+    font-size: 90%;
+}
+
+.list .line .price .line3 a {
+    color: rgb(60, 59, 55);
+    text-decoration: underline;
+    position: relative;
+}
+
+.list .line .location {
+    width: 15%;
+    text-align: center;
+    position: relative;
+}
+
+.prev_orders.list .line .location {
+    width: 13%;
+}
+
+.list .line .location span {
+    margin-top: 5px;
+    display: block;
+}
+
+.list .line .prev {
+    width: 40%;
+    position: relative;
+    margin-right:5px;
+}
+.list .line .prev b {
+    color:rgb(42, 41, 92);
+}
+
+.list .line .discount {
+    width: 20%;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+    .list .line .discount span {
+        line-height: 17px;
+        font-size: 80%;
+    }
+
+        .list .line .discount span.red {
+            margin: 0px;
+            color: #cc1480;
+            font-size: 120%;
+            font-weight: bold;
+        }
+    .list .line .discount .line1 .discount{
+        color: #cc1480;
+        font-size: 120% !important;
+        font-weight: bold;
+    }
+
+    .list .line .discount .line1 b{
+        font-weight : normal;
+        white-space:nowrap;
+    }
+
+.favorite_restaurants .list .line .discount .line1 {
+    font-weight: bold;
+}
+
+.list .line .discount .line2 {
+    width: 100%;
+    position: absolute;
+}
+
+.list .line .discount .line1 a {
+    background: url("http://static.mysodexo.co.il/i/dots-h.png") repeat-x top;
+    padding: 4px 8px;
+    color: rgb(60, 59, 55);
+    text-decoration: underline;
+    position: relative;
+}
+
+.favorite_restaurants .list .line .discount .line2 a {
+    background: none;
+    padding: 4px 8px;
+    color: rgb(60, 59, 55);
+    text-decoration: underline;
+    position: relative;
+}
+
+.list .line .order-details {
+    width: 408px;
+}
+
+.list .line .discount .line3 {
+    top: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+.list .line .details {
+    background: url("http://static.mysodexo.co.il/i/dots-h.png") repeat-x bottom;
+    font-size: 95%;
+    float: left;
+    position: relative;
+}
+
+.list .closed.line .details div {
+    position: relative;
+    opacity: 0.5;
+}
+
+.list .line .t_title {
+    background: url("http://static.mysodexo.co.il/i/dots-h.png") repeat-x bottom;
+    color: rgb(42, 41, 92);
+    font-weight: bold;
+}
+
+.list .line .t_row {
+    min-height: 22px;
+}
+
+.list .line .details .t_column {
+    float: left;
+}
+
+.list .line .details .t_price {
+    width: 48px;
+}
+
+.list .line .details .t_count {
+    width: 50px;
+}
+
+.list .line .details .t_details {
+    background: url("http://static.mysodexo.co.il/i/dots-v.png") repeat-y right;
+    width: 186px;
+}
+
+    .list .line .details .t_details .t_title {
+        padding-right: 10px;
+    }
+
+    .list .line .details .t_details .t_row {
+        padding-right: 10px;
+    }
+
+.list .line .checkin {
+    background: url("http://static.mysodexo.co.il/i/dots-h.png") repeat-x bottom;
+    font-size: 95%;
+    margin-right: 12px;
+    float: left;
+    position: relative;
+}
+
+.list .closed.line .checkin {
+    opacity: 0.5;
+}
+
+.list .line .order-details .bottom {
+    margin-top: 8px;
+}
+
+.blue-button:hover,.blue-button:visited {
+    color:white;
+}
+.blue-button:link {
+    background: rgb(42, 41, 92);
+    padding: 3px 8px;
+    outline: 0px !important;
+    border-radius: 3px;
+    border: 0px currentColor;
+    border-image: none;
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+    margin-top:10px;
+}
+.blue-button{
+	color: #ffffff;
+	background: #2a295c;
+	border: 0;
+	outline: 0 !important;
+	border-radius: 3px;
+	vertical-align: middle;
+	padding: 3px 8px;
+}
+
+    .blue-button span {
+        background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 6px;
+        padding-left: 14px;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+.red-button {
+    background: /*linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%),*/ #cc1480;
+    padding: 3px 8px;
+    outline: 0px !important;
+    border-radius: 3px;
+    border: 0px currentColor;
+    border-image: none;
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+}
+
+    .red-button span {
+        background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 6px;
+        padding-left: 14px;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+.grey-button {
+    background: rgb(211, 208, 201);
+    padding: 3px 8px;
+    outline: 0px !important;
+    border-radius: 3px;
+    border: 0px currentColor;
+    border-image: none;
+    text-align: left;
+    color: rgb(56, 56, 56);
+    vertical-align: middle;
+}
+
+    .grey-button span {
+        background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 6px;
+        padding-left: 14px;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+.list .line .order-details a.pull-right {
+    color: rgb(60, 59, 55);
+    line-height: 27px;
+    text-decoration: underline;
+    margin-right: 12px;
+}
+
+.list .line .order-details .text-red {
+    width: 185px;
+    color: rgb(191, 0, 23);
+    font-size: 95%;
+    margin-right: 10px;
+}
+
+.list .line .order-details .bottom img {
+    margin-right: 14px;
+}
+
+.list .line .info {
+    width: 25%;
+}
+
+    .list .line .info .name {
+        font-size: 140%;
+        cursor:pointer;
+    }
+
+    .list .line .info .text {
+        font-size: 95%;
+    }
+
+    .rating {
+        clear: both;
+        margin-top: 8px;
+    }
+
+        .rating .rateit {
+            top: 3px;
+        }
+
+        .rating .count {
+            background: url("http://static.mysodexo.co.il/i/count-left.png") no-repeat left top;
+            padding-left: 6px;
+            font-size: 80%;
+            display: inline-block;
+        }
+
+            .rating .count span {
+                background: rgb(233, 231, 228);
+                padding: 0px 5px;
+                height: 19px;
+                line-height: 19px;
+            }
+
+.list .line .image {
+    background-position: center;
+    border: 1px solid rgb(211, 208, 201);
+    border-image: none;
+    width: 107px;
+    height: 107px;
+    margin-left: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+    .image .heart{
+        cursor:pointer;
+	    background: url("../i/heart.png");
+	    display: block;
+	    height: 31px;
+	    position: absolute;
+	    right: -12px;
+	    top: -12px;
+	    width: 31px;
+	    background-size: 100%;
+        cursor:pointer!important;
+    }
+    .image .heart.active{
+	    background: url("../i/heart-active.png");
+	    background-size: 100%;
+    }
+    .list .line .image .label, .filter .col-5 .image .label {
+        background: url("../i/newrest.png") no-repeat left top;
+        width: 55px;
+        height: 55px;
+        left: 0px;
+        top: 0px;
+        display: block;
+        position: absolute;
+    }
+    
+.list .line .sold.price {
+    text-align: center;
+    color: rgb(191, 0, 23);
+    line-height: 14px;
+    font-size: 85%;
+    margin-top: 0px;
+}
+
+.delivery-list .list .closed.line .price {
+    text-align: center;
+    color: rgb(191, 0, 23);
+    line-height: 14px;
+    font-size: 85%;
+    margin-top: 0px;
+}
+
+.list .line .sold.price .line1 {
+    background: none;
+    padding: 0px;
+    margin-top: 8px;
+}
+
+.delivery-list .list .closed.line .price .line1 {
+    background: none;
+    padding: 0px;
+    margin-top: 8px;
+}
+
+.list .line .sold.price .line2 {
+    background: none;
+    padding: 0px;
+    font-size: 100%;
+}
+
+.delivery-list .list .closed.line .price .line2 {
+    background: none;
+    padding: 0px;
+    font-size: 100%;
+}
+
+.list .line .sold.price a {
+    color: rgb(191, 0, 23);
+    font-weight: bold;
+}
+
+.list .closed.line .location span {
+    position: relative;
+    opacity: 0.5;
+}
+
+.list .closed.line .discount {
+    position: relative;
+    opacity: 0.5;
+}
+
+    .list .closed.line .discount span {
+        position: relative;
+        opacity: 0.5;
+    }
+
+    .list .closed.line .discount a {
+        position: relative;
+        opacity: 0.5;
+    }
+
+.list .closed.line .info {
+    position: relative;
+    opacity: 0.5;
+}
+
+.list .closed.line .image {
+    position: relative;
+    opacity: 0.5;
+}
+
+.list .closed.line .phone {
+    position: relative;
+    opacity: 0.5;
+}
+
+.list .closed.line .discount a {
+    color: rgb(186, 186, 186);
+    opacity: 1;
+}
+
+.popup-location {
+    background: url("http://static.mysodexo.co.il/i/popup-location-bg.png");
+    padding: 5px 20px 5px 14px;
+    top: -78px;
+    width: 154px;
+    height: 102px;
+    text-align: right;
+    right: 27%;
+    display: none;
+    position: absolute;
+}
+
+.prev_orders .popup-location {
+    left: -85px;
+}
+
+.popup-more {
+    background: url("http://static.mysodexo.co.il/i/popup-more-bg.png");
+    padding: 6px 25px 25px;
+    left: -232px;
+    top: -165px;
+    width: 255px;
+    height: 172px;
+    text-align: right;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.popup-status {
+    left: -83px;
+    top: -95px;
+    width: 189px !important;
+    height: 100px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.popup-tnx {
+    background: url("http://static.mysodexo.co.il/i/popup-tnx-bg.png");
+    padding: 5px 15px;
+    left: -26px;
+    top: -85px;
+    width: 135px;
+    height: 75px;
+    color: rgb(191, 0, 23);
+    display: none;
+    position: absolute;
+}
+
+    .popup-tnx .text {
+        text-align: center;
+        line-height: 17px;
+        font-size: 85%;
+        margin-top: 7px;
+    }
+
+span.progress {
+    background: url("http://static.mysodexo.co.il/i/popup-status-line.png");
+    margin: 0px 3px;
+    width: 89px;
+    height: 15px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+    span.progress span {
+        background: url("http://static.mysodexo.co.il/i/popup-status-line2.png") no-repeat right;
+        width: 50%;
+        height: 15px;
+        display: inline-block;
+    }
+
+.popup-location .title {
+    background-position: bottom;
+    width: 100%;
+    color: rgb(161, 2, 2);
+    padding-bottom: 3px;
+    font-size: 120%;
+    background-image: url("http://static.mysodexo.co.il/i/popup-dots.png");
+    background-repeat: repeat-x;
+}
+
+.popup-more .title {
+    background-position: bottom;
+    width: 100%;
+    color: rgb(161, 2, 2);
+    padding-bottom: 3px;
+    font-size: 120%;
+    background-image: url("http://static.mysodexo.co.il/i/popup-dots.png");
+    background-repeat: repeat-x;
+}
+
+.popup-status .title {
+    background-position: bottom;
+    width: 100%;
+    color: rgb(161, 2, 2);
+    padding-bottom: 3px;
+    font-size: 120%;
+    background-image: url("http://static.mysodexo.co.il/i/popup-dots.png");
+    background-repeat: repeat-x;
+}
+
+.popup-location .text {
+    line-height: 17px;
+    font-size: 95%;
+    margin-top: 8px !important;
+}
+
+.popup-more .text {
+    line-height: 17px;
+    font-size: 95%;
+    margin-top: 8px !important;
+}
+
+.popup-status .text {
+    line-height: 17px;
+    font-size: 95%;
+    margin-top: 8px !important;
+}
+
+.popup-more .text .p-line1 {
+    background-position: bottom;
+    padding-bottom: 8px;
+    background-image: url("http://static.mysodexo.co.il/i/popup-dots.png");
+    background-repeat: repeat-x;
+}
+
+.popup-more .text .p-line2 {
+    margin-top: 8px;
+}
+
+.tooltipster-login {
+    background: url("../i/opaque.png");
+}
+.popup-login {
+    text-align: center;
+    direction: rtl;
+}
+    .popup-login .close-btn {
+        background: url("http://static.mysodexo.co.il/i/popup-login-close.png") 0px 0px;
+        left: 11px;
+        top: 15px;
+        width: 13px;
+        height: 12px;
+        right: auto;
+        position: absolute;
+    }
+
+    .popup-login .part-left {
+        width: 140px;
+    }
+
+    .popup-login .line1 {
+        font-size: 110%;
+        margin-top: 10px;
+    }
+    .popup-login .dotted-v {
+        background: url("http://static.mysodexo.co.il/i/popup-dots-v.png");
+        width: 1px;
+        height: 60px;
+    }
+
+    .popup-login .part-right {
+        width: 140px;
+    }
+
+.bottom-part {
+    background-position: top;
+    padding: 4px;
+    background-image: url("http://static.mysodexo.co.il/i/popup-dots.png");
+    background-repeat: repeat-x;
+}
+
+.popup-login div.text {
+    margin-top: 14px;
+}
+
+    .popup-login div.text span {
+        color: rgb(56, 56, 56);
+        font-size: 110%;
+        display: inline-block;
+    }
+
+.popup-login button {
+    background: /*linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%)*/, #cc1480;
+    outline: 0px !important;
+    border-radius: 3px;
+    border: 0px currentColor;
+    border-image: none;
+    width: 148px;
+    height: 30px;
+    text-align: left;
+    color: #fff;
+    padding-left: 12px;
+    vertical-align: middle;
+}
+
+    .popup-login button span {
+        background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 2px;
+        padding-left: 25px;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+.top_part .filter-2.filter {
+    padding: 13px 9px 25px;
+    height: 129px;
+}
+
+    .top_part .filter-2.filter .col {
+        height: 105px;
+    }
+
+.filter-2.filter .col-1 {
+    white-space:nowrap;
+    width: 12%;
+    padding-right: 1%;
+}
+
+.filter .col-1 .rating {
+    margin-top: 10px;
+}
+
+    .filter .col-1 .rating .rateit, .rat .rateit {
+        top: 3px;
+    }
+    .rat .count {display:none}
+    .filter .col-1 .rating .count {
+        background: url("http://static.mysodexo.co.il/i/count-left.png") no-repeat left top;
+        padding-left: 6px;
+        font-size: 80%;
+        display: inline-block;
+    }
+
+        .filter .col-1 .rating .count span, .rat .count span {
+            background: rgb(233, 231, 228);
+            padding: 0px 5px;
+            height: 19px;
+            color: #000;
+            line-height: 19px;
+        }
+
+.filter .col-1 .line1 a {
+    background: rgb(28, 28, 28);
+    margin: 8px 0px;
+    padding: 1px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.filter-2.filter .col-2 {
+    width: 14%;
+    text-align: center;
+}
+
+    .filter-2.filter .col-2 .line1 {
+        font-weight: bold;
+    }
+
+.filter-2.filter .col-3 .line1 {
+    font-weight: bold;
+}
+
+.filter-2.filter .col-4 .line1 {
+    font-weight: bold;
+}
+
+.filter-2.filter .col-2 .line2 {
+    font-size: 120%;
+}
+
+.filter-2.filter .col-2 .line3 a {
+    color: #fff;
+    font-size: 90%;
+    text-decoration: underline;
+}
+
+.filter-2.filter .col-3 {
+    width: 20%;
+    text-align: center;
+    line-height: 24px;
+}
+
+    .filter-2.filter .col-3 .line3 {
+        font-size: 90%;
+    }
+
+        .filter-2.filter .col-3 .line3 .button {
+            background: /*linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%),*/ #cc1480;
+            padding: 1px 20px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 100%;
+            display: inline-block;
+        }
+
+            .filter-2.filter .col-3 .line3 .button span {
+                background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 9px;
+                line-height: 30px;
+                padding-left: 15px;
+                display: block;
+            }
+
+.filter-2.filter .col-4 {
+    width: 12%;
+    line-height: 54px;
+}
+
+    .filter-2.filter .col-4 .line2 {
+        line-height: 20px;
+        margin-top: 8px;
+    }
+
+.filter-2.filter .col-5 {
+    white-space: nowrap;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 42%;
+    margin-top: 0px;
+}
+
+.filter .col-5 .info {
+    float: right;
+    width:60%;
+}
+
+    .filter .col-5 .info .name {
+        font-size: 140%;
+        font-weight: bold;
+        line-height:1.2em;
+    }
+
+    .filter .col-5 .info .text {
+        font-weight: bold;
+    }
+
+    .filter .col-5 .info .contact {
+        line-height:1.7;
+    }
+
+.filter .col-5 .image {
+    background-position: center;
+    border: 1px solid rgb(211, 208, 201);
+    border-image: none;
+    width: 107px;
+    height: 107px;
+    margin-left: 10px;
+    float: right;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+}
+
+    .filter .col-5 .image a.heart {
+        background: url("../i/heart.png") 0% 0% / 100%;
+        top: -8px;
+        width: 31px;
+        height: 31px;
+        right: -9px;
+        display: block;
+        position: absolute;
+    }
+
+    .filter .col-5 .image a.active.heart {
+        background: url("../i/heart-active.png") 0% 0% / 100%;
+    }
+
+.sidebar_left .dark-blocks {
+    margin-bottom: 25px;
+}
+
+    .sidebar_left .dark-blocks .block {
+        margin-bottom: 2px;
+    }
+
+    .sidebar_left .dark-blocks .title {
+        background: rgb(56, 56, 56);
+        height: 40px;
+        color: #fff;
+        position: relative;
+    }
+
+        .sidebar_left .dark-blocks .title .arrow {
+            background: url("http://static.mysodexo.co.il/i/block-arrow.png") no-repeat center;
+            left: 18px;
+            top: 0px;
+            width: 11px;
+            height: 40px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+    .sidebar_left .dark-blocks .active.block .title .arrow {
+        background: url("http://static.mysodexo.co.il/i/block-arrow-down.png") no-repeat center;
+        left: 15px;
+        width: 19px;
+    }
+
+    .sidebar_left .dark-blocks .title .cart-count {
+        /*
+        top: 6px;
+        right: 38px;
+        font-size: 80%;
+        position: absolute;
+*/
+        background: #cc1480;
+        border: solid #383838;
+        border-radius: 50%;
+        font-size: 80%;
+        text-align: center;
+        line-height: 20px;
+        height: 27px;
+        width: 27px;
+        position: relative;
+        left: 15px;
+        top: -7px;
+        display: inline-block;
+        overflow: visible;
+    }
+.sidebar_left .dark-blocks .t_title {
+    background: rgb(219, 217, 211);
+    padding: 0px 5%;
+}
+
+    .sidebar_left .dark-blocks .body {
+        background: rgb(243, 241, 237);
+        font-size: 90%;
+        display: none;
+    }
+
+    .sidebar_left .dark-blocks .active.block .body {
+        display: block;
+    }
+
+    .sidebar_left .dark-blocks .line {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+        margin: 0px auto;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
+
+    .sidebar_left .dark-blocks :last-child.line {
+        background: none;
+    }
+
+    .sidebar_left .dark-blocks .line .line1, .sidebar_left .dark-blocks .line .big {
+        color: #cc1480;
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+        .sidebar_left .dark-blocks .line .line1 b, .sidebar_left .dark-blocks .line .big strong {
+            font-size: 130% !important;
+        }
+
+    .sidebar_left .dark-blocks .t_row {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+        margin: 0px auto;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 12px;
+    }
+
+    .sidebar_left .dark-blocks .block .last.t_row {
+        background: none;
+    }
+
+    .sidebar_left .dark-blocks .t_title div {
+        float: left;
+    }
+
+    .sidebar_left .dark-blocks .t_row div {
+        float: left;
+        min-height: 10px;
+    }
+    .sidebar_left .dark-blocks .t_icon img{
+        cursor:pointer;
+    }
+    .sidebar_left .dark-blocks .t_icon {
+        width: 11%;
+        text-align: left;
+    }
+
+    .sidebar_left .dark-blocks .t_row .t_icon {
+        margin-top: -4px;
+    }
+
+    .sidebar_left .dark-blocks .t_row .t_price {
+        text-align:center;
+    }
+
+    .sidebar_left .dark-blocks .t_count {
+        width: 10%;
+    }
+
+    .sidebar_left .dark-blocks .t_price {
+        width: 26%;
+    }
+
+    .sidebar_left .dark-blocks .t_dose {
+        width: 56%;
+    }
+
+    .sidebar_left .dark-blocks .t_delete {
+        width: 7%;
+    }
+
+    .sidebar_left .dark-blocks .block .totals {
+        margin: 0px auto;
+        width: 90%;
+        border-top-color: rgb(195, 195, 194);
+        border-top-width: 1px;
+        border-top-style: solid;
+    }
+
+        .sidebar_left .dark-blocks .block .totals .t_row {
+            background: none;
+            padding: 8px 20px 11px 10px;
+            width: 100%;
+            border-bottom-color: rgb(229, 227, 224);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        .sidebar_left .dark-blocks .block .totals .grand.t_row {
+            background: rgb(249, 248, 246);
+            border-top-color: rgb(195, 195, 194);
+            border-bottom-color: currentColor;
+            border-top-width: 1px;
+            border-bottom-width: medium;
+            border-top-style: solid;
+            border-bottom-style: none;
+        }
+
+            .sidebar_left .dark-blocks .block .totals .grand.t_row .price {
+                line-height: 20px;
+                font-size: 160%;
+            }
+
+        .sidebar_left .dark-blocks .block .totals .type {
+            float: right;
+        }
+
+        .sidebar_left .dark-blocks .block .totals .grand.t_row .type {
+            line-height: 20px;
+        }
+
+    .sidebar_left .dark-blocks .block .buttons {
+        width: 90%;
+        padding-bottom: 14px;
+        margin-top: 10px;
+        margin-right: 5%;
+    }
+
+        .sidebar_left .dark-blocks .block .buttons .submit {
+            background: /*linear-gradient(90deg, #cc1480 21%, #d92776 22%, #d92776 40%, #e6396c 41%, #e6396c 59%, #f24c62 60%, #f24c62 78%, #ff5e58 79%),*/ #cc1480;
+            outline: 0px !important;
+            border-radius: 3px;
+            border: 0px currentColor;
+            border-image: none;
+            width: 75px;
+            height: 25px;
+            color: #fff;
+            font-size: 120%;
+            vertical-align: middle;
+            float: left;
+            text-align: center;
+            text-decoration: none;
+        }
+
+            .sidebar_left .dark-blocks .block .buttons .submit span {
+                background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 7px;
+                padding-left: 13px;
+                display: block;
+                position: relative;
+                z-index: 1;
+            }
+
+        .sidebar_left .dark-blocks .block .buttons .undo {
+            background: rgb(211, 208, 201);
+            outline: 0px !important;
+            border-radius: 3px;
+            border: 0px currentColor;
+            border-image: none;
+            width: 75px;
+            height: 25px;
+            font-size: 120%;
+            vertical-align: middle;
+            float: right;
+            text-align:center;
+            text-decoration:none;
+            color:inherit;
+        }
+
+.menu {
+    width: 53%;
+    margin-top: 25px;
+    margin-right: 15%;
+    float: right;
+}
+
+    .menu .tabs {
+        margin: 0px;
+    }
+
+.tabs-2 {
+    margin: 0px;
+}
+
+.menu .tabs .button {
+    padding: 7px 45px;
+}
+
+.tabs-2 .button {
+    padding: 7px 45px;
+}
+
+.tabs-2 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.tabs .count {
+    background: 0px 0px #cc1480;
+    padding: 1px 6px;
+    border-radius: 18px;
+    left: 5px;
+    top: -11px;
+    color: #fff;
+    font-size: 95%;
+    position: absolute;
+}
+
+.menu .note {
+    background: rgb(245, 245, 244);
+    padding: 3px 12px;
+    color: #cc1480;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.content-wrap .note {
+    background: rgb(245, 245, 244);
+    padding: 3px 12px;
+    color: #cc1480;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.menu .content {
+    border-top: 1px solid rgb(211, 208, 201);
+    border-left: 1px solid rgb(211, 208, 201);
+    border-image: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+    .menu .content .sidebar_right {
+        background: rgb(233, 233, 233);
+        top: 0px;
+        width: 12%;
+        right: 0px;
+        min-height: 100%;
+    }
+
+        .menu .content .sidebar_right ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            color: #cc1480;
+        }
+
+            .menu .content .sidebar_right ul li {
+                min-height: 45px;
+                text-align: center;
+                line-height: 15px;
+                padding: 12px 2px;
+                cursor: pointer;
+                border-right-color: #cc1480;
+                border-right-width: 5px;
+            }
+                .menu .content .sidebar_right ul li table {
+                    min-height:30px;
+                    width:100%;
+                }
+                .menu .content .sidebar_right ul li td {
+                    vertical-align:middle;
+                    text-align:center;
+                }
+                .menu .content .sidebar_right ul li.solid { border-right-style: solid; }
+                .menu .content .sidebar_right ul li.active {
+                    border-right-style: solid;
+                    font-weight:bold!important;
+                    cursor:text;
+                }
+                .menu .content .sidebar_right ul li.active.mndt0{
+                    background: #fff;
+                }
+                .menu .content .sidebar_right ul li.active.mndtOK {
+                    background: #C3FDB8;
+                }
+.pickup_restaurant_menu .menu .content .sidebar_right ul li {
+    padding-top: 30px;
+}
+
+.menu .content .main {
+    width: 88%;
+    float: left;
+}
+
+    .menu .content .main .t_title {
+        background: rgb(56, 56, 56);
+        margin: 15px auto 0px;
+        border-radius: 4px;
+        width: 95%;
+        color: #fff;
+    }
+
+        .menu .content .main .t_title div {
+            float: right;
+        }
+
+    .menu .content .main .t_dose {
+        width: 64%;
+        padding-right: 1%;
+    }
+
+    .menu .content .main .t_vegan {
+        width: 30%;
+        text-align: center;
+        display:none;
+    }
+
+    .menu .content .main .price {
+        width: 21%;
+        text-align: center;
+    }
+
+    .menu .content .main .add_to_cart {
+        width: 15%;
+        text-align: center;
+    }
+
+    .menu .content .main .list {
+        margin: 0px auto;
+        width: 95%;
+        float: none;
+    }
+
+        .menu .content .main .list .divider {
+            background: rgb(211, 208, 201);
+            height: 1px;
+        }
+
+        .menu .content .main .list .name {
+            text-align: center;
+            border-bottom-color: rgb(211, 208, 201);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+            .menu .content .main .list .name .line1 {
+                color: rgb(42, 41, 92);
+                font-size: 130%;
+            }
+
+            .menu .content .main .list .name .line2 {
+                color: rgb(56, 56, 56);
+            }
+
+        .menu .content .main .list .t_row {
+            border-bottom:1px solid rgb(211, 208, 201);
+        }
+            .menu .content .main .list .t_row table {
+                height:80px;
+                width:100%;
+            }
+            .menu .content .main .list .t_row td {
+                vertical-align:middle;
+                height:100%;
+            }
+
+            .menu .content .main .list .t_row div {
+                float: right;
+                min-height: 1px;
+            }
+
+            .menu .content .main .list .t_row .t_dose .line1 {
+                color: rgb(42, 41, 92);
+                font-weight: bold;
+            }
+
+            .menu .content .main .list .t_row .t_dose .line2 {
+                font-size: 85%;
+            }
+
+            .menu .content .main .list .t_row .t_vegan {
+                text-align: center;
+                display:none;
+            }
+
+                .menu .content .main .list .t_row .t_vegan img {
+                    margin-top: 24px;
+                }
+
+            .menu .content .main .list .t_row .add_to_cart {
+                text-align: center;
+                position: relative;
+            }
+            .menu .content .main .list .t_row .price {
+                font-size:120%;
+                font-weight:bold;
+            }
+
+            .menu .content .main .list .t_row .disabled.add_to_cart {
+                opacity: 0.5;
+            }
+
+                .menu .content .main .list .t_row .disabled.add_to_cart a {
+                    cursor: default;
+                }
+
+        .menu .content .main .list .more {
+            text-align: center;
+            cursor: pointer;
+        }
+
+.bxslider-about {
+    margin-bottom: 25px;
+}
+
+    .bxslider-about ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bxslider-about li {
+        list-style-type:none;
+    }
+
+    .bxslider-about .bx-wrapper .bx-viewport {
+        border: currentColor;
+        border-image: none;
+        left: 0px;
+        box-shadow: none;
+        height: 358px;
+    }
+
+    .bxslider-about .bx-wrapper .bx-controls-direction a.bx-prev {
+        background: url("http://static.mysodexo.co.il/i/slider-about-arrow-left.png");
+        left: 0px;
+        width: 49px;
+        height: 49px;
+        margin-top: -24px;
+    }
+
+    .bxslider-about .bx-wrapper .bx-controls-direction a.bx-next {
+        background: url("http://static.mysodexo.co.il/i/slider-about-arrow-right.png");
+        width: 49px;
+        height: 49px;
+        right: 0px;
+        margin-top: -24px;
+    }
+
+    .bxslider-about li img {
+        width: 100%;
+    }
+
+.about .delivery {
+    width: 130px;
+    margin-left: 80px;
+}
+
+    .about .delivery .title {
+        font-size: 95%;
+        font-weight: bold;
+    }
+
+    .about .delivery .icons {
+        padding-top: 5px;
+        padding-bottom: 12px;
+        border-bottom-color: rgb(211, 208, 201);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+        .about .delivery .icons img {
+            margin-left: 9px;
+        }
+
+            .about .delivery .icons img.disabled {
+                position: relative;
+                opacity: 0.5;
+            }
+
+    .about .delivery ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .about .delivery ul li {
+            margin-top: 5px;
+        }
+
+            .about .delivery ul li label {
+                font-size: 95%;
+                font-weight: normal;
+            }
+
+    .about .delivery .prettycheckbox > a {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+    }
+
+    .about .delivery .prettyradio > a {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+    }
+
+    .about .delivery .prettycheckbox > a:focus {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked.png");
+    }
+
+    .about .delivery .prettycheckbox > a.checked {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-checked.png") !important;
+    }
+
+    .about .delivery .prettycheckbox > a.disabled {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-unchecked-disabled.png") !important;
+    }
+
+    .about .delivery .prettycheckbox > a.checked.disabled {
+        background: url("http://static.mysodexo.co.il/i/checkbox-about-checked-disabled.png") !important;
+    }
+
+.about .desc {
+    width: 60%;
+    margin-right: 25px;
+}
+
+    .about .desc .title {
+        color: rgb(42, 41, 92);
+        line-height: 27px;
+        font-size: 200%;
+        margin-bottom: 8px;
+    }
+
+    .about .desc .text {
+        font-size: 90%;
+    }
+
+.about .map {
+    border-top-color: rgb(211, 208, 201);
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+    .about .map .title {
+        color: rgb(42, 41, 92);
+        font-size: 140%;
+        margin-bottom: 15px;
+    }
+
+.map iframe {
+    width: 100%;
+}
+
+.sidebar_left .red.block .title {
+    background: #cc1480;
+    margin: 0px;
+    height: auto;
+    font-size: 190%;
+}
+
+.sidebar_left .red.block {
+    margin: 0px;
+}
+
+    .sidebar_left .red.block .t_title {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+    }
+
+.tabs .active .count {
+    border: 2px solid #fff;
+    border-image: none;
+}
+
+.menu .content .top_part {
+    margin: 26px auto 0px;
+    width: 95%;
+    padding-bottom: 20px;
+    border-bottom-color: rgb(211, 208, 201);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+    .menu .content .top_part .ratings {
+        width: 170px;
+        margin-left: 15px;
+        float: left;
+    }
+
+        .menu .content .top_part .ratings .count {
+            background: url("http://static.mysodexo.co.il/i/count-left.png") no-repeat left top;
+            padding-left: 6px;
+            font-size: 80%;
+            display: inline-block;
+        }
+
+        .menu .content .top_part .ratings .rateit {
+            top: 3px;
+        }
+
+        .menu .content .top_part .ratings .count span {
+            background: 0px 0px rgb(233, 231, 228);
+            padding: 0px 5px;
+            height: 19px;
+            text-align: center;
+            color: #000;
+            line-height: 19px;
+            display: inline-block;
+            min-width: 22px;
+        }
+
+        .menu .content .top_part .ratings .summ {
+            padding-bottom: 15px;
+            border-bottom-color: rgb(211, 208, 201);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+            .menu .content .top_part .ratings .summ .grey {
+                background: rgb(247, 247, 246);
+            }
+
+            .menu .content .top_part .ratings .summ .rateit {
+                margin-right: 5px;
+                float: right;
+            }
+
+.summ .rateit .rateit-range {
+    background: url("http://static.mysodexo.co.il/i/star-big.gif") 0px 0px;
+}
+
+.summ .rateit .rateit-selected {
+    background: url("http://static.mysodexo.co.il/i/star-big.gif") 0px 0px;
+}
+
+.summ .rateit .rateit-hover {
+    background: url("http://static.mysodexo.co.il/i/star-big.gif") 0px 0px;
+}
+
+.summ .rateit .rateit-selected-rtl {
+    background-position: right -18px;
+}
+
+.summ .rateit .rateit-hover-rtl {
+    background-position: right -36px;
+}
+
+.summ .count {
+    background: url("http://static.mysodexo.co.il/i/count-left-big.png") no-repeat left top;
+    float: right;
+}
+
+    .summ .count span {
+        height: 25px;
+        line-height: 23px;
+        min-width: 30px;
+    }
+
+.menu .content .top_part .ratings ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .menu .content .top_part .ratings ul li {
+        margin-top: 8px;
+    }
+
+.menu .content .top_part .desc {
+    margin: 0px;
+    width: 600px;
+    float: right;
+}
+
+    .menu .content .top_part .desc .title {
+        color: rgb(42, 41, 92);
+        font-size: 220%;
+    }
+
+    .menu .content .top_part .desc .text {
+        font-size: 120%;
+        margin-top: 10px;
+    }
+
+    .menu .content .top_part .desc a.button {
+        background: rgb(42, 41, 92);
+        padding: 1px 10px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 120%;
+        margin-top: 37px;
+        display: inline-block;
+    }
+
+        .menu .content .top_part .desc a.button span {
+            background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left;
+            padding-left: 15px;
+            display: block;
+        }
+
+.menu .content .t_table {
+    margin: 0px auto;
+    width: 95%;
+}
+
+    .menu .content .t_table .t_head {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+ul.submenu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    ul.submenu li {
+        padding: 0px 10px;
+        height: 18px;
+        line-height: 18px;
+        border-left-color: #000;
+        border-left-width: 1px;
+        border-left-style: solid;
+        display: inline-block;
+        position: relative;
+    }
+
+        ul.submenu li:last-child {
+            border: currentColor;
+            border-image: none;
+        }
+
+        ul.submenu li .arrow {
+            left: 50%;
+            top: 19px;
+            width: 0;
+            margin-left: -4px;
+            display: none;
+            position: absolute;
+            border: 6px solid transparent;
+            border-top-color: #cc1480;
+        }
+
+        ul.submenu li.red {
+            background: #cc1480;
+            margin: 0 0 0 9px;
+            padding: 0;
+            border: none;
+            width: 127px;
+            height: 22px;
+            text-align: center;
+            color: #fff;
+            line-height: 22px;
+            position: relative;
+        }
+
+            ul.submenu li.red::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 0;
+                top: 0;
+                left: -9px;
+                bottom: 0;
+                border-style: solid;
+                border-width: 11px 9px 11px 0;
+                border-color: transparent #cc1480;
+            }
+
+        ul.submenu li.active a{
+            color: #cc1480;
+            font-weight: bold;
+            text-decoration:none;
+        }
+
+            ul.submenu li.active .arrow {
+                display: block;
+            }
+
+.menu .content .t_table .t_body {
+}
+
+    .menu .content .t_table .t_body .t_row {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .menu .content .t_table .t_body .t_col {
+        background: url("http://static.mysodexo.co.il/i/popup-dots-v.png") repeat-y right;
+        text-align: center;
+        float: right;
+        min-height: 76px;
+    }
+
+    .menu .content .t_table .t_body .rating {
+        background: none;
+        width: 10%;
+        padding-top: 3px;
+    }
+
+        .menu .content .t_table .t_body .rating img {
+            margin: 10px auto auto;
+            display: block;
+        }
+
+    .menu .content .t_table .t_body .date {
+        width: 9%;
+        padding-top: 26px;
+        font-size: 80%;
+    }
+
+    .menu .content .t_table .t_body .client {
+        width: 15%;
+        padding-top: 26px;
+        font-size: 80%;
+    }
+
+    .menu .content .t_table .t_body .text {
+        width: 66%;
+        text-align: right;
+        padding-right: 2%;
+        font-size: 90%;
+    }
+
+        .menu .content .t_table .t_body .text .arrow-more {
+            background: url("http://static.mysodexo.co.il/i/recomm-show-more.png");
+            width: 11px;
+            height: 7px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .menu .content .t_table .t_body .text .arrow-less {
+            background: url("http://static.mysodexo.co.il/i/recomm-show-more.png");
+            width: 11px;
+            height: 7px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .menu .content .t_table .t_body .text .arrow-less {
+            background: url("http://static.mysodexo.co.il/i/recomm-show-less.png");
+        }
+
+        .menu .content .t_table .t_body .text .full-text {
+            display: none;
+        }
+
+.restaurant_previous_orders .prev_orders {
+    border-right-color: rgb(211, 208, 201);
+    border-bottom-color: rgb(211, 208, 201);
+    border-left-color: rgb(211, 208, 201);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.restaurant_previous_orders .list .line {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-0 {
+    width: 16%;
+    padding-right: 1%;
+}
+
+.checkout_process .filter-2.filter .col-0 {
+    width: 16%;
+    padding-right: 1%;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-0 .line1 {
+    font-size: 145%;
+    margin-bottom: 8px;
+}
+
+.checkout_process .filter-2.filter .col-0 .line1 {
+    font-size: 145%;
+    margin-bottom: 8px;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-0 .line2 {
+    font-size: 80%;
+}
+
+.checkout_process .filter-2.filter .col-0 .line2 {
+    font-size: 80%;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-0 .line3 a {
+    color: rgb(211, 208, 201);
+}
+
+.checkout_process .filter-2.filter .col-0 .line3 a {
+    color: rgb(211, 208, 201);
+}
+
+.restaurant_previous_orders .filter-2.filter .col-1 {
+    width: 13%;
+}
+
+.checkout_process .filter-2.filter .col-1 {
+    width: 13%;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-2 {
+    width: 11%;
+}
+
+.checkout_process .filter-2.filter .col-2 {
+    width: 11%;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-4 {
+    width: 13%;
+}
+
+.checkout_process .filter-2.filter .col-4 {
+    width: 13%;
+}
+
+.restaurant_previous_orders .filter-2.filter .col-5 {
+    width: 30%;
+}
+
+.checkout_process .filter-2.filter .col-5 {
+    width: 30%;
+}
+
+.checkout {
+    width: 53%;
+    margin-right: 15%;
+    margin-bottom: 80px;
+    float: right;
+}
+    .checkout textarea,.checkout label {
+        font-size:medium;
+        font-weight:normal;
+        color:black;
+    }
+    .checkout textarea {
+        width:100%;
+        height:100px;
+        overflow-x:hidden;
+        border-radius: 4px;
+    }
+    .checkout td,.checkout th {
+        padding:5px;
+        vertical-align:top;
+    }
+    .dots {
+        padding:5px;
+        border:dotted 1px;
+    }
+    .vdots td {
+        padding:5px;
+        border-top:0;
+        border-right:1px;
+        border-left:1px;
+        border-bottom:0;
+        border-style:dashed;
+    }
+    .checkout .cntr {
+        text-align:center;
+    }
+    .checkout .hed th {
+        font-size:110%;
+        font-weight:bold;
+        color:#2a295c;
+        background: #f3f1ed;
+        padding:10px inherit;
+    }
+    .checkout .sum th{
+        padding:5px;
+        font-size:105%;
+        background: #f9f8f6;
+    }
+    .checkout .mor th {
+        padding:10px;
+    }
+    .checkout .wit {
+        background: white;
+        padding: 5px 15px;
+        border-radius: 4px;
+        width: 100%;
+        font-weight:normal;
+        font-size:90%;
+        color:black;
+    }
+    hr {
+        border-style:dashed;
+        border-width:1px;
+        margin:5px 0;
+        color:black;
+    }
+
+#time2 {
+    background: rgb(243, 241, 237);
+    border-radius: 0px 4px 4px 0px;
+    border: currentColor;
+    border-image: none;
+    width: 79px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 95%;
+    vertical-align: middle;
+}
+
+#icon_time2 {
+    cursor: pointer;
+}
+
+.checkout .summary .title {
+    color: rgb(42, 41, 92);
+    font-size: 130%;
+    margin-bottom: 8px;
+}
+
+    .checkout .summary .title span {
+        color: rgb(84, 83, 80);
+        font-size: 60%;
+    }
+
+.checkout .button {
+    background: #cc1480;
+    padding: 1px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 120%;
+    margin-top: 12px;
+    margin-left: 12px;
+    float: left;
+    display: inline-block;
+}
+
+.checkout .grey.button {
+    background: rgb(211, 208, 201);
+    color: rgb(56, 56, 56);
+}
+
+.checkout .button span {
+    background: url("http://static.mysodexo.co.il/i/arrow-right.png") no-repeat left 9px;
+    padding-left: 15px;
+    display: block;
+}
+
+.checkout .red-button {
+    margin-top: 10px;
+}
+
+.checkout > .text { margin-bottom: 12px; }
+
+    .checkout > .text .pull-right {
+        width: 85%;
+        color: rgb(42, 41, 92);
+    }
+
+        .checkout > .text .pull-right b.title {
+            color: rgb(60, 59, 55);
+        }
+
+    .checkout > .text .pull-left {
+        background: url("http://static.mysodexo.co.il/i/popup-dots-v.png") repeat-y right;
+        width: 15%;
+        text-align: center;
+    }
+
+        .checkout > .text .pull-left a {
+            color: rgb(60, 59, 55);
+            font-size: 90%;
+            text-decoration: underline;
+        }
+
+.checkout .cols-4.t_table .t_head .t_col {
+    padding-bottom: 8px;
+}
+
+.checkout .cols-4.t_table .t_body .t_row {
+    background: none;
+}
+
+.checkout .cols-4.t_table .sub.t_row {
+    background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom rgb(249, 248, 246);
+}
+
+.checkout .cols-4.t_table .t_row .t_col1 {
+    width: 40%;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.checkout .cols-4.t_table .t_row .t_col2 {
+    left: 50%;
+}
+
+.checkout .cols-4.t_table .t_row .t_col3 {
+    left: 30%;
+    width: 20%;
+}
+
+.checkout .cols-4.t_table .t_row .t_col4 {
+    left: 0px;
+    top: 0px;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+}
+
+.checkout .cols-4.t_table .t_body .for {
+    margin: 0px;
+}
+
+.checkout .cols-4.t_table .sub.t_row .t_col {
+    padding: 0px 10px 0px 0px;
+    left: 0px;
+    height: 30px;
+    color: rgb(42, 41, 92);
+    font-size: 130%;
+    position: relative;
+}
+
+.checkout .cols-4.t_table .total.t_row {
+    background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom rgb(243, 241, 237);
+}
+
+    .checkout .cols-4.t_table .total.t_row .t_col {
+        padding: 0px 10px 0px 0px;
+        left: 0px;
+        height: 35px;
+        color: rgb(42, 41, 92);
+        font-weight: bold;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .checkout .cols-4.t_table .total.t_row .t_col4 {
+        font-size: 150%;
+    }
+
+.checkout .red {
+    color: #cc1480;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.bxslider ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content-wrap {
+    width: 53%;
+    margin-right: 15%;
+    min-height: 500px;
+    float: right;
+}
+
+    .content-wrap > .title {
+        padding-bottom: 18px;
+        margin-top: 15px;
+        border-bottom-color: rgb(26, 26, 24);
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+    }
+
+    .content-wrap .h1 {
+        margin: 0px;
+    }
+
+    .content-wrap .tabs {
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+
+.grey .selectpicker {
+    background: rgb(243, 241, 237);
+}
+
+.content-wrap .products {
+    padding: 20px;
+    border: 1px solid rgb(211, 208, 201);
+    border-image: none;
+    margin-top: 5px;
+}
+
+    .content-wrap .filter span {
+        color: rgb(137, 138, 140);
+    }
+
+    .content-wrap .filter .bootstrap-select {
+        margin-left: 12px;
+    }
+
+    .content-wrap .filter label {
+        font-weight: normal;
+    }
+
+.products .grid .block {
+    background: rgb(243, 241, 237);
+    width: 30%;
+    margin-bottom: 25px;
+    margin-left: 5%;
+    float: right;
+}
+
+.products .grid :nth-child(3n+1).block {
+    margin-left: 0;
+}
+
+.products .grid .block .image {
+    position: relative;
+}
+
+    .products .grid .block .image img {
+        width: 100%;
+    }
+
+.products .grid .block .icon {
+    background-position: center;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+    right: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: rgb(52, 51, 100);
+}
+
+.products .grid .block .description {
+    padding: 0px 4%;
+    position: relative;
+    height: 115px;
+}
+
+.products .grid .block .nam {
+    width: 100%;
+    color: rgb(60, 59, 55);
+    font-size: 130%;
+    max-height:35px;
+    overflow:hidden;
+}
+
+.products .grid .block .text {
+    width: 85%;
+    line-height: 1.3;
+    height:78px;
+    overflow:hidden;
+    margin-bottom:5px;
+}
+
+.products .grid .block .more {
+    left: 4%;
+    top: 5%;
+    position: absolute;
+}
+
+.content-wrap .map {
+    background: rgb(243, 241, 237);
+    margin: 25px 0px;
+    padding: 0px 10px;
+}
+
+    .content-wrap .map .title {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x bottom;
+        margin: 0px auto 8px;
+        padding: 25px 0px;
+        color: rgb(42, 41, 92);
+        font-size: 130%;
+        font-weight: bold;
+    }
+
+    .content-wrap .map .buttons-line {
+        padding-bottom: 8px;
+        margin-top: 8px;
+    }
+
+        .content-wrap .map .buttons-line a.button {
+            background: url("http://static.mysodexo.co.il/i/popup-dots-v.png") repeat-y left;
+            padding: 0px 10px;
+            color: rgb(137, 138, 140);
+            font-size: 90%;
+        }
+
+        .content-wrap .map .buttons-line a:last-child.button {
+            background: none;
+        }
+
+.content-wrap .posts .post {
+    background: rgb(243, 241, 237);
+    padding: 10px;
+    width: 49%;
+}
+
+    .content-wrap .posts .post .head {
+        background-position: right top;
+        padding-right: 120px;
+        padding-bottom: 20px;
+        min-height: 104px;
+        background-repeat: no-repeat;
+    }
+
+        .content-wrap .posts .post .head span {
+            padding-top: 12px;
+        }
+
+        .content-wrap .posts .post .head .h3 {
+            margin: 0px;
+            display: block;
+        }
+
+    .content-wrap .posts .post .body table {
+        width: 100%;
+    }
+
+    .content-wrap .posts .post .body .line {
+        background: url("http://static.mysodexo.co.il/i/popup-dots.png") repeat-x top;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+
+        .content-wrap .posts .post .body .line .title {
+            font-weight: bold;
+        }
+
+.hex {
+    background: url("http://static.mysodexo.co.il/i/post-hex.png");
+    width: 101px;
+    height: 99px;
+    text-align: center;
+    color: #fff;
+    line-height: 99px;
+    font-size: 130%;
+    float: left;
+}
+
+.big {
+    line-height: 1.1;
+    font-size: 375%;
+}
+
+.content-wrap .posts .post .icons {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+    .content-wrap .posts .post .icons img {
+        margin: 10px;
+    }
+
+.content-wrap .posts .post .button {
+    color: rgb(62, 61, 106);
+    font-size: 150%;
+    float: left;
+}
+
+.content-wrap .submenu {
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.summary td { margin:10px }
+
+.bx-has-pager.bx-controls {
+    position: relative;
+    z-index: 2;
+}
+
+.rateit .rateit-selected-rtl {
+    background-position: right -14px;
+}
+
+.rateit .rateit-hover-rtl {
+    background-position: right -28px;
+}
+
+.bootstrap-select > .btn {
+    padding: 4px 12px 4px 25px;
+    border: currentColor;
+    border-image: none;
+    height: 25px;
+    color: rgb(137, 138, 140);
+}
+
+.btn-group.bootstrap-select .btn .caret {
+    background: url("http://static.mysodexo.co.il/i/icon-dropdown.png") 0px 0px;
+    margin: 0px;
+    border: currentColor;
+    border-image: none;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 25px;
+    right: auto;
+    display: block;
+    position: absolute;
+}
+
+.btn-group.bootstrap-select .btn .filter-option {
+    width: 100%;
+    text-align: right;
+    line-height: 14px;
+    overflow: hidden;
+    float: right !important;
+    display: inline-block;
+}
+
+.center { display: block; text-align: center; }
+.nobr .nobr, .none .none, .hid, .hide0, .hid-1, .closed, .hidTrue, .fancybox-error {display:none}
+.hidden-1,.shown-0,.hiddenTrue{display:none!important}
+.invisible{visibility:hidden}
+
+.tooltipster-content hr {
+    border: 1px dashed;
+    margin: 5px 0;
+}
+
+.tooltipster-content b {
+    color: #cc1480;
+    font-size: 120%;
+}
+
+.tooltipster-content red {color: #cc1480;}
+.tooltipster-content blue {color: #2a295c;}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fixed-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+    .fixed-table td,.fixed-table th {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0;
+        margin: 0;
+    }
+
+.filterForm select, .filterForm label{
+    margin-bottom:8px;
+}
+.tims {
+    margin-top:4px;
+    margin-bottom:4px;
+}
+.filterForm .short{
+    width:85px;
+}
+.filterForm .long{
+    width:141px;
+}
+
+.radAddress input[type="radio"] { margin-right:-23px; }
+
+input[type="checkbox"],input[type="radio"]{
+  width: 19px;
+  height: 19px;
+  vertical-align:-5px;
+  margin-left:5px;
+  margin-right:5px;
+}
+.pager {
+    display:none;
+}
+.pager > span {
+    display: inline-block;
+}
+.pager > span > * {
+  margin-left:5px;
+  margin-right:5px;
+  float:right;
+  font-size:14pt;
+}
+.pager > span > *:nth-child(2) {
+   float: left !important;
+}
+.select-buttons {
+    margin: 0 .3em;
+}
+.select-buttons input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: fixed;
+}
+    .select-buttons label {
+        background: #fff;
+        border: .5px solid #333;
+        cursor: pointer;
+        font-weight: 100;
+        margin: 0 -.5px;
+        padding: .1em .2em;
+    }
+    .select-buttons label:first-of-type {
+        border-radius: 0 1ex 1ex 0;
+    }
+
+    .select-buttons label:last-of-type {
+        border-radius: 1ex 0 0 1ex;
+    }
+    .select-buttons :checked + label {
+        background: #ddd;
+        font-weight: 900;
+        text-shadow: 0 -1px 0;
+    }
+.ui-loader {
+    background:url(http://static.mysodexo.co.il/mobile/include/images/ajax-loader.gif);
+    display: none; z-index: 9999999; position: fixed; top: 50%; left: 50%; border:0;
+    width:46px;height:46px;filter: Alpha(Opacity=30); opacity: .3;
+}
+th {text-align:right;}
+.t_center{text-align:center;margin:auto;left:50%}
+.t_right{text-align:right;}
+.top {vertical-align:top}
+.b {font-weight:bold;}
+.net .hid {display:inline;}
+.show-disabled {display:none}
+.disabled {background-color:#eee; opacity: 0.6;}
+    .disabled .arrow, .disabled .name, .disabled .image {cursor:default!important;}
+    .disabled .closed { display:inline-block; color:crimson; float:left }
+    .disabled .arrow{background-image:url('http://static.mysodexo.co.il/i/closedBig.png?d=1')!important;width:23.5%!important;}
+    .disabled .price{display:none;}
+    .disabled .prev{width:22%!important;}
+    .disabled .show-disabled {display:inline}
+.rotate {
+    -webkit-animation: rotate 0.5s linear ;
+    -moz-animation: rotate 0.5s linear ;
+    animation: rotate 0.5s linear ;
+}
+input.aspNetDisabled { background-color:#999; }
+.bxslider li, .bxslider-summary-main li, .bxslider li .text{display:none}
+.fancybox-opened {z-index:11121}
+.fancybox-overlay {z-index:11111}
+.icon-bar .extra {white-space:normal}
+.comment .rateit-range {vertical-align:middle}
+.comment [data-rateit-value="0"], .filter:empty, .line.id, .hidTA5, .hidCbTA5 input, .hidCbTA5-1 input, .hidCbTA50 input {display:none;}
+.ui-widget {z-index:10!important}
+.red-fg {color:rgb(193,0,23)} .blue-fg,.blue-fg:link {color:rgb(40,56,151)}
+.blue {color: #2a295c!important;}
+.blue-bg {background-color: #2a295c;}
+.popup.blog{width:1000px;height:auto;padding:25px}
+.alef *{font-family:'Alef Hebrew',serif!important;margin:0!important;text-indent:0!important}
+.alef span, .alef p{font-size:initial!important}
+.col.extra {background-repeat:no-repeat!important}
+.fancybox-skin {background-color:white}
+.sidebar{position:absolute;top:0;bottom:0;z-index:99999;height:100%}
+.open-sidebar {top:33%;position:fixed}
+.in-sidebar {top:20%;max-width:400px;position:fixed}
+.sb .form {margin-left:-5px;padding-left:5px}
+.sb-btn img {position:relative}
+.form div {display:inline-block;}
+.form textarea {font-weight:normal;}
+.form .red-button {width:90px;color:white;text-decoration:none;cursor:pointer}
+@media all and (max-height:700px) {.in-sidebar{position:initial}}
+.detail .bdgt br,.my-menu.title .bdgt br{display:none}
+.detail input[type=submit] {margin-top:3px;}
+.ui-datepicker {z-index:10!important}
+.datepicker {
+    background: url("http://static.mysodexo.co.il/i/icon-datepicker.png") no-repeat left rgb(243, 241, 237);
+    border-radius: 4px;
+    border: currentColor;
+    border-image: none;
+    width: 120px;
+    height: 25px;
+    padding-right: 5px;
+    padding-left: 30px;
+    margin-left: 5px;
+}
+.list-block * {display:table}
+.free-1 span {display:none}
+.round_buttons a, .tabs a{opacity:0.4;cursor:default}
+.round_buttons a[href], .tabs a[href]{opacity:1;cursor:pointer}
+iframe {position:static!important;}
+.ltr {direction:ltr}
+.rtl {direction:rtl}
+.hid-tip4,.hid1995,.hid-admin15071,.hid-admin15072,.hid-admin15073,.hid-bzq3112,.hide-sit-16749,.hide-sit-16794,.hid-my16535 {display:none!important}
+.show-dlvr4{display:table-row}
+.show-sit-16749,.show-sit-16794{display:block!important}
+.show-high-low-16535 {display:inline!important}
+.pac-container {z-index:11131;}
+.pac-item {text-align:right!important}
+.pac-item span {pointer-events: none;}
+.show-27 {display:inline-block!important}
+.fltr {font-size:large;vertical-align:middle}
+.hand {cursor:pointer}
+.sbmt-addr {margin:0!important;vertical-align:0!important}
+.dflt-addr:before{display:none}
+.frm .sbmt {display:none!important}
+.ui-icon-triangle-1-s {background-position:-64px -12px!important}
+.fancybox-inner{width:auto!important}
+.fancybox.addr img{margin-left:2px}
+.main .list .print{display:none}
+.main .list .xl {padding-top:8px}
+.main .list .xlsx {padding-right:8px}
+select{color:black}
+.rest-img-logo{height:105px;object-fit:cover}
+.btn_accessibility span{display:none}
+.rez.low.space_bet {position: fixed;left: 0;right: 0;bottom: 0;top: 0;flex-flow: column;max-height: 99.9vh;justify-content: space-between;}
+.low.rez.hid.space_bet::before {content: ' ';display: block;flex: 0 1 78vw;background: no-repeat center center/100% url(../images/mob_bg.jpg);}
+#glassix-widget-launcher-container {right:3px!important;z-index:12222!important}
